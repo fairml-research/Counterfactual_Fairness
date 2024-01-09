@@ -156,4 +156,4 @@ class VAE(nn.Module):
         mu, logvar = self.encode(x.view(-1, self.nb_features), a, y)  
         z = self.reparameterize(mu, logvar) 
         recon_X_batch, recon_Y_batch = self.decode(torch.cat([z,a.view(-1, 1)],1))
-        return  recon_X_batch, z, recon_Y_batch, mu, logvar # on decode ici pour retrouver une image ici
+        return  recon_X_batch, z, recon_Y_batch, mu, logvar 
