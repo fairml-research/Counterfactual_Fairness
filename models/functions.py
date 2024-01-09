@@ -36,7 +36,7 @@ def Normalize(X_train, y_train, sensitive, X_test, y_test, sensitivet):
     X_test = X_test.pipe(scale_df, scaler)   
     X_test[X_test>1]=1
     X_test[X_test<0]=0
-    return X_train, y_train, sensitive, X_test, y_test, sensitivet, scaler, scale_df, meanYtrain, stdYtrain
+    return X_train, y_train, Z_train, X_test, y_test, Z_test, scaler, scale_df, meanYtrain, stdYtrain
 
 class Net_HGR(nn.Module):
     def __init__(self):
