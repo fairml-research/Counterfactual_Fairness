@@ -3,7 +3,8 @@
 This work has been accepted at the Machine Learning Journal.
 
 https://link.springer.com/article/10.1007/s10994-022-06206-8
-link to arxiv paper: https://arxiv.org/pdf/2008.13122.pdf
+
+Link to arxiv paper: https://arxiv.org/pdf/2008.13122.pdf
 
 Abstract—In recent years, fairness has become an important
 topic in the machine learning research community. In particular,
